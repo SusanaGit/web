@@ -1,0 +1,18 @@
+<div class="menu-container">
+
+  <ul class="menu-tabs">
+    <li><a routerLink="/home">Home</a></li>
+    <li><a routerLink="/algorithms">Algorithms</a></li>
+  </ul>
+
+  <div class="menu-button-container">
+    <button class="menu-button" (click)="toggleMenu()" aria-label="Open">
+      ☰ Menú
+    </button>
+  </div>
+
+  <ul class="menu-dropdown" [class.show]="isMenuOpen">
+    <li><a routerLink="/home" (click)="closeMenu()">Home</a></li>
+    <li><a routerLink="/algorithms" (click)="closeMenu()">Algorithms</a></li>
+  </ul>
+</div>

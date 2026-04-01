@@ -1,0 +1,35 @@
+.menu {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.header_base {
+  background-size: cover;
+  background-position: center;
+  padding: 0.2em;
+}
+
+.header_base h2 {
+  text-align: center;
+  color: #494949;
+  text-shadow: 1px 1px 2px beige;
+  font-size: 1.5em;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #ffdc91;
+}
+
+@media (max-width: 768px) {
+  .header_base {
+    padding-top: 50px;
+  }
+
+  .menu {
+    padding: 10px;
+  }
+}
